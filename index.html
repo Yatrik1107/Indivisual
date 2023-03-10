@@ -1,0 +1,135 @@
+<html>
+
+<head>
+
+  <title>Recovery</title>
+
+  <meta name="viewport"content="width=device-width initial-scale=1.0"></meta>
+   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+       
+
+   <link rel="stylesheet" href="web.css"/>
+
+</head>
+
+<body>
+
+<div class="bg-light"><!--id="banner"-->
+
+       <div>   
+        <nav class="navbar navbar-expand-md" id="mainnavbar"><!--or you can use fixed-bottom & remove navbar-expand-md/lg/xl/xxl for vertical nav bar-->
+       
+            <div class="container-fluid"><!--IF logo is there it will merge content right side else it will merge content left side-->
+               <a href="#" class="navbar-brand"> 
+                  <img src="logo.png" alt="image not found" class="img-thumnail" style="width:50px"/>
+              </a> 
+             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#id1">
+              <span class="navbar-toggler-icon"></span>
+               </button>
+             
+      
+            <div class="collapse navbar-collapse justify-content-center" id="id1">
+                <ul class="navbar-nav nav-tabs">
+                    <li class="nav-item"> <a href="#" class="nav-link text-info active">Home</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link text-info">About</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link text-info">Resorts</a></li>
+                    <li class="nav-item"> <a href="login.html" class="nav-link text-info">Login</a> </li>
+                    <li class="nav-item dropdown"> 
+                        <a href="#" class="nav-link dropdown-toggle text-info" data-bs-toggle="dropdown">More</a><!--data-bs-toggle sequence matter!-->
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item">Options..</a> </li>
+                            <li> <a class="dropdown-item">Help?</a> </li>
+                        </ul> 
+                    </li>
+                    <li class="nav-item d-inline-flex"> <input type="text" placeholder="Type something to search"/> <button class="btn-light">Search</button> </li> 
+
+            </div>
+      
+            </div>
+          </nav>  
+       </div>
+
+
+       <div class="headercontent">
+        
+          <div class="d-flex flex-column">
+            <div class="display-2 text-dark border-bottom">Paradise Philosophy</div>
+            <div>
+              <pre class="text-dark float-end" style="font-size:25px;">
+                Sustainability, respect for local culture and 
+                profound connection inform the Alila experience. 
+                Embrace your sense of wonder and go within to feel
+                something unexpected, profound and new.</pre></div>
+          </div>
+         
+       </div>
+
+
+       <div class="headercontent">
+        
+          <div class="d-inline-flex">
+            <div style="width:60%"><pre class="display-2 text-dark border-bottom">COMPLETE IMMERSION</pre>
+                 <p class="text-dark float-end" style="font-size:25px;">Discover the world and your place within it.
+                    Explore new places and cultures with a considered
+                    approach letting rare, intimate experiences guide 
+                    you through destinations unknown.</p>
+                  <p class="text-dark float-end" style="font-size:20px;">Profound experiences transport us, reminding us
+                    how meaningful it is to be here, present and anywhere
+                    at all. Paradise exists to immerse guests in rich culture
+                    and the stunning natural surroundings of the environment. 
+                    This philosophy continues off-property in the local community,
+                    where Alila has earned privileged, intimate access to the rarest
+                    experiences in each destination.</p>
+
+            </div>
+            <div>
+               
+              <img src="image1.jpg" alt="image not found" style="height:100%;width:100%;border:5px solid white"/>
+              
+            </div>
+
+            </div>
+          </div>
+       
+       </div>
+     
+
+       <div class="headercontent">
+          <div class="d-flex flex-column">
+            <div> <div class="display-2 text-dark border-bottom">The Paradise Resorts Overview</div> </div>
+              <div class="carouseldiv">
+            
+                <div class="carousel slide" data-bs-ride="carousel" id="id2">
+              
+                        <div class="carousel-indicators">
+                          <button data-bs-target="#abc" data-bs-slide-to="0" class="active"></button>
+                          <button data-bs-target="#abc" data-bs-slide-to="1"></button>
+                          <button data-bs-target="#abc" data-bs-slide-to="2"></button>
+                          <button data-bs-target="#abc" data-bs-slide-to="3"></button>
+                        </div>
+                  
+                  
+                        <div class="carousel-inner">
+                        <div class="carousel-item active"> <img src="c1.jpg" alt="image not found!" class="d-block w-100 h-100"/> </div>
+                        <div class="carousel-item"> <img src="c2.jpg" alt="image not found!" class="d-block w-100 h-100"/> </div>
+                        <div class="carousel-item"> <img src="c3.jpg" alt="image not found!" class="d-block w-100 h-100"/> </div>
+                        <div class="carousel-item"> <img src="c4.jpg" alt="image not found!" class="d-block w-100 h-100"/> </div>
+                        </div>
+                  
+                  
+                      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#id2"> <span class="carousel-control-prev-icon bg-dark"></span> </button>
+                      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#id2"> <span class="carousel-control-next-icon bg-dark"></span> </button>
+              
+                </div>
+          </div>
+       </div>        
+
+  </div>
+</div>  
+</body>
+
+</html>

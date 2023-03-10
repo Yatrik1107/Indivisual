@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carousel with Text</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+  <!-- Bootstrap 5 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="web.css"/>
+  <style>
+    /* Set the max width and height for the carousel */
+    .carousel {
+      max-width: auto;
+      max-height:auto;
+    }
+
+    /* Center the text on the carousel */
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    <div class="d-flex flex-column">
+        <div>
+            <nav class="navbar navbar-expand-lg fixed-top" id="mainnavbar">
+                <div class="container-fluid"><!--IF logo is there it will merge content right side else it will merge content left side-->
+        
+                    <a href="#" class="navbar-brand"> 
+                        <img src="logo.png" alt="image not found" style="width:70px" class="rounded"/> 
+                    </a>
+                    
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#abc"> <span class="navbar-toggler-icon"></span> </button>
+                    
+                    <div class="collapse navbar-collapse justify-content-center justify-content-space-between" id="abc">
+        
+                        <ul class="navbar-nav nav-tabs">
+                            <li class="nav-item"> <a href="#" class="nav-link text-info">Home</a></li>
+                            <li class="nav-item"> <a href="#" class="nav-link text-info">Active</a></li>
+                            <li class="nav-item"> <a href="#" class="nav-link text-info">Introduction</a> </li>
+                            <li class="nav-item"> <a href="#" class="nav-link text-info">Summery</a> </li>
+                            <li class="nav-item"> <a href="#" class="nav-link text-info">End</a> </li>
+                            <li class="nav-item dropdown"> 
+                                <a href="#" class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown">More</a><!--data-bs-toggle sequence matter!-->
+                                <ul class="dropdown-menu">
+                                    <li> <a class="dropdown-item">Options..</a> </li>
+                                    <li> <a class="dropdown-item">Help?</a> </li>
+                                </ul> 
+                            </li>
+                            <li class="nav-item d-inline-flex"> <input type="text" placeholder="Type something to search"/> <button class="btn-light">Search</button> </li> 
+        
+                        </ul>   
+        
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+        
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+          </ol>
+      
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image5.jpg" alt="Slide 1" style="height:1000px; width:100%;">
+              <div class="carousel-caption">
+                <h1>welcome to</h1>
+                <p>paradise inn</p>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <img src="image2.jpg" alt="Slide 2" style="height:1000px; width:100%;">
+              <div class="carousel-caption">
+                <h1>welcome to</h1>
+                <p>paradise inn</p>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <img src="image3.jpg" alt="Slide 3" style="height:1000px; width:100%;">
+              <div class="carousel-caption">
+                <h1>welcome to</h1>
+                <p>paradise inn</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Controls -->
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+        
+    </div>
+
+
+    <!-- Rooms Section -->
+    <section id="rooms">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Rooms</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="rresort image 2.jpeg" class="card-img-top" alt="Room Image">
+              <div class="card-body">
+                <h5 class="card-title">Standard Room</h5>
+                <p class="card-text">Our standard rooms offer a comfortable and affordable stay for up to two guests.</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="resort image4.jpg" class="card-img-top" alt="Room Image">
+              <div class="card-body">
+                <h5 class="card-title">luxurious ROOM</h5>
+                <p class="card-title"> comfortable and memorizing stay comfortable stay upto 4 guests.</p>
+                <a href="#" class="btn btn-primary">book now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="resort image 3.jpg" class="card-img-top" alt="Room Image">
+              <div class="card-body">
+                <h5 class="card-title">King's ROOM</h5>
+                <p class="card-title"> Live kings life at </p>
+                <a href="#" class="btn btn-primary">book now</a>
+              </div>
+            </div>
+          </div>
+          
+</body>
+</html>
